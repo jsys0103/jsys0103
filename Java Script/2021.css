@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'font';
+    src:url("NanumSquare_acR.ttf");
+}
+@font-face {
+    font-family: 'head';
+    src: url('Vogue.ttf');
+    }
+@font-face {
+    font-family: 'fontB';
+    src:url("NanumSquare_acB.ttf");
+}
+
+a:link {color:black; text-decoration: none;}
+a:visited {color:gray; text-decoration: none;}
+a:hover {color:saddlebrown; text-decoration: underline;}
+
+
+
+body {
+    height: auto;
+    text-align: center;
+    background: linear-gradient(to bottom, white 200px, rgb(247, 237, 180), rgb(243, 208, 161))
+}
+
+h1{
+    font-family: head;
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 40px;
+    padding: 10px;
+    text-align: center;
+    word-spacing: 50px;
+}
+
+li {
+    display: inline;
+    font-weight: bold;
+}
+
+#contain/*body에서 타이틀 뺀 부분*/{
+    font-family: font;
+    padding:20px;
+    padding-bottom:100px;
+    line-height: 40px;
+}
+
+#intro {
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    margin:0 auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255, 0.2);
+    background-clip: padding-box;
+    border-radius: 40px 40px 40px 40px;
+    border: 1px rgb(255, 255, 255, 0.2) solid;
+    font-size: 12px;
+}
+
+.list {
+    font-family: fontB;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+    border-bottom: 1px rgb(209, 159, 93) solid;
+    border-top: 1px  rgb(209, 159, 93) solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding:20px;
+}
+
+#bottom {
+    font-family: font;
+    font-size: 10px;
+    margin:50px;
+    font-style: none;
+}
+
+#booklist{
+    margin-bottom: 300px;
+}
+
+booklist.a{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+booklist.a[title]:hover::after{
+    content:attr(title);
+    position: absolute;
+    top:-100%;
+    left:0;
+}
+
+
